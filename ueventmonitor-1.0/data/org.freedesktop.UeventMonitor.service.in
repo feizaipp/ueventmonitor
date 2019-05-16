@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.freedesktop.UeventMonitor
+Exec=@ueventmonitorprivdir@/ueventmonitord
+User=root
+SystemdService=ueventmonitor.service

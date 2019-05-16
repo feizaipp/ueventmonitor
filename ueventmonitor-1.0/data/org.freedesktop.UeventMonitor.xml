@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/">
+  <interface name="org.freedesktop.UeventMonitor.Base">
+    <signal name="UeventAdded">
+      <arg name="serial" type="s"/>
+      <arg name="vendor" type="s"/>
+      <arg name="model" type="s"/>
+      <arg name="uuid" type="s"/>
+    </signal>
+
+    <signal name="UeventRemoved">
+      <arg name="serial" type="s"/>
+      <arg name="vendor" type="s"/>
+      <arg name="model" type="s"/>
+      <arg name="uuid" type="s"/>
+    </signal>
+  </interface>
+</node>

@@ -1,0 +1,11 @@
+[Unit]
+Description=uevent monitor
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.UeventMonitor
+ExecStart=@ueventmonitorprivdir@/ueventmonitord
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
